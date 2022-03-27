@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.bg{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 37, 70, 0.9)), url("https://www.altcoinbuzz.io/wp-content/uploads/2018/07/Uzbekistan-to-adopt-Blockchain-at-National-Level.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-section{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    background-color: white;
+}
+header{
+    height: 30%;
+    padding-top: 15px;
+    background: linear-gradient(to left, rgb(218, 218, 228, 0.9),rgba(255,255,255,0.7)), url("https://fsd.kopilkaurokov.ru/up/html/2020/11/23/k_5fbb41e461c1a/564153_1.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid darkcyan; */
+}
+header .lang{
+    text-align: end;
+}
+header .lang ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+header .lang ul li a{
+    color: brown;
+    padding: 5px 25px;
+    transition: 0.5s;
+    text-decoration: none;
+    border: 1px solid brown;
+}
+header .lang ul li a:hover{
+    color: aliceblue;
+    background-color:  hsl(299, 100%, 40%);
+}
+.brand-section{
+    overflow: hidden;
+}
+.brand-section .brand, .brand-section .contact{
+    width: 50%;
+    height: 150px;
+    display: inline-flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+.brand-section .brand{
+    float: left;
+}
+.brand-section .brand .brand-img, .brand-section .brand .brand-name{
+    display: inline-flex;
+    /* border: 1px solid maroon; */
+} 
+.brand-section .brand .brand-name span{
+    padding: 25px 5px;
+    font-size: 1.8em;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+.brand-section .contact{
+    float: right;
+}
+.brand-section .contact .number{
+    width: 100%;
+    padding-right: 20px;
+    text-align: end;
+    /* border: 1px solid brown; */
+}
+.brand-section .contact .number ul li{
+    font-size: 2em;
+    color: darkorchid;
+}
+.brand-section .contact .number ul li span{
+    font-size: 17px;
+    margin-right: 5px;
+}
+.brand-section .contact .number ul li:first-child{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+nav{
+    padding: 10px;
+    overflow: hidden;
+    background-color: darkmagenta;
+}
+.base{
+    overflow: hidden;
+}
+#sidebar{
+    left: 10%;
+    width: 20%;
+    float: left;
+    height: auto;
+    display: none;
+    transition: 1s;
+    margin-left: -500px;
+    background-color: blueviolet;
+}
+.main{
+    transition: 1s;
+    padding: 5px 20px;
+    text-align: justify;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked + .main{
+    width: 80%;
+    float: right;
+    padding: 0 50px;
+}
+input[type="checkbox"]:checked + #sidebar{
+    margin-left: 0;
+    display: inline;
+}
+nav .nomi, nav .menu-btn{
+    width: 50%;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+nav .nomi
+{
+    float: left;
+}
+nav .menu-btn {
+    text-align: end;
+    float: right;
+}
+nav .menu-btn label i{
+    padding: 5px;
+    font-size: larger;
+    background-color: rgb(156, 3, 156);
+}
